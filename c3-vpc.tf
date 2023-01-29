@@ -27,15 +27,15 @@ module "vpc" {
   enable_dns_hostnames             = true
 
   public_subnet_tags = {
-    Name = "public-subnets"
+    Type = "public-subnets"
   }
 
   private_subnet_tags = {
-    Name = "private-subnets"
+    Type = "private-subnets"
   }
 
   database_subnet_tags = {
-    Name = "database-subnets"
+    Type = "database-subnets"
   }
 
   tags = {
