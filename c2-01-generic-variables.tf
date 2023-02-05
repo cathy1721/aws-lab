@@ -1,5 +1,4 @@
 # Input Variables
-
 # AWS Region
 variable "aws_region" {
   description = "Region in which AWS Resources to be created"
@@ -13,8 +12,8 @@ variable "environment" {
   default     = "dev"
 }
 # Business Division
-variable "business_division" {
-  description = "Business Division in the large organizations this Infrastructure belongs"
+variable "business_divsion" {
+  description = "Business Division in the large organization this Infrastructure belongs"
   type        = string
-  default     = "SAP"
+  default     = "DataEngineeringTechnology"
 }

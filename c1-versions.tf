@@ -4,9 +4,10 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.0"
+      version = "~> 3.63"
     }
   }
+  /*
   cloud {
     organization = "cathy1721"
 
@@ -14,14 +15,11 @@ terraform {
       name = "aws-lab"
     }
   }
+  */
 }
 
-# Provider Block
+# Terraform Provider Block
 provider "aws" {
-  region  = var.aws_region
-  profile = "default"
+  region = "us-east-1"
 }
-/*
-Note-1:  AWS Credentials Profile (profile = "default") configured on your local desktop terminal  
-$HOME/.aws/credentials
-*/
+
